@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuisine Central</title>
+    <link href="lab3.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <a class="skip-link" href="#maincontent">Skip to main content</a>
+    <header>
+        <h1>Cuisine Central</h1>
+        <time datetime="2023-10-18">October 18th, 2023</time>
+    </header>
+    <nav>
+        <ul>
+            <li><span aria-hidden="true" class="material-icons">storefront</span> <a href="#story">Our Story</a></li>
+            <li><span aria-hidden="true" class="material-icons">local_dining</span> <a href="#dishes">Featured Dishes</a></li>
+            <li><span aria-hidden="true" class="material-icons">place</span> <a href="#locate">Find Us</a></li>
+            <li><span aria-hidden="true" class="material-icons">contact_mail</span> <a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main id="maincontent">
+        <section id="story">
+            <h2>Our Story</h2>
+            <p>Cuisine Central began as a small family-owned eatery in the heart of New York. Over the years, it's become a hub for gourmet lovers and culinary explorers.</p>
+        </section>
+
+        <section id="dishes">
+            <h2>Featured Dishes</h2>
+
+            <h3>Crispy Duck Salad <mark>$14</mark></h3>
+            <p>Seasoned duck on a bed of mixed greens, topped with a tangy orange dressing.</p>
+
+            <h3>Vegan Tofu Steak <mark>$13</mark></h3>
+            <p>Grilled tofu with a side of steamed vegetables and a savory mushroom sauce.</p>
+        </section>
+
+        <section id="locate">
+            <h2>Find Us</h2>
+            <p>We're located at 123 Delicious Ave, New York, NY.</p>
+            <table>
+                <caption>Restaurant Operating Hours</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Day</th>
+                        <th scope="col">Hours</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday - Friday</td>
+                        <td>9am - 9pm</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday</td>
+                        <td>10am - 10pm</td>
+                    </tr>
+                    <tr>
+                        <td>Sunday</td>
+                        <td>11am - 8pm</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>We'd love to hear from you!</p>
+            <form id="contactForm" method="post">
+                <fieldset>
+                    <legend>Contact Form</legend>
+                    <label for="cName">Name: <input type="text" id="cName" required></label>
+                    <label for="cEmail">Email: <input type="email" id="cEmail" required></label>
+                    <label for="cMessage">Message: <textarea id="cMessage" rows="4" required></textarea></label>
+                    <input type="submit" value="Send Message">
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Cuisine Central. Crafted by ChatGPT Designs.</p>
+        <address>
+            <a href="mailto:info@cuisinecentral.com">info@cuisinecentral.com</a>
+        </address>
+    </footer>
+</body>
+
+</html>
