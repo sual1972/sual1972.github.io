@@ -92,7 +92,7 @@ aside {
 
 footer {
     grid-area: footer;
-    background-color: #2b4738; /* Darker green for higher contrast */
+    background-color: #13241b; /* Darker green for higher contrast */
     color: white;
     text-align: center;
     padding: 0.5em;
