@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Slab&display=swap');
+
+/* css reset */
+*, *:before, *:after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Base styles */
+body {
+    background-color: #f0f4f3;
+    font-family: 'Roboto Slab', serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    margin: 1em 0;
+    line-height: 1.6;
+}
+
+/* Structural styles */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+        "header header header"
+        "nav main aside1"
+        "nav main aside2"
+        "footer footer footer";
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+header {
+    grid-area: header;
+    background-color: #355c47;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+nav {
+    grid-area: nav;
+    background-color: #dbead5;
+    padding: 1em;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    margin-bottom: 0.5em;
+}
+
+nav ul li a {
+    color: #355c47;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    grid-area: main;
+    padding: 1em;
+}
+
+aside {
+    padding: 1em;
+    background-color: #e3eed3;
+}
+
+#contact {
+    grid-area: aside1;
+}
+
+#booking {
+    grid-area: aside2;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #3e8563;
+    color: white;
+    text-align: center;
+    padding: 0.5em;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "header"
+            "nav"
+            "main"
+            "aside1"
+            "aside2"
+            "footer";
+    }
+}
+
+/* Form styles */
+#booking-form label {
+    display: block;
+    margin: 0.5em 0;
+}
+
+#booking-form input[type="text"],
+#booking-form input[type="date"],
+#booking-form input[type="time"],
+#booking-form input[type="number"] {
+    width: 100%;
+    padding: 0.5em;
+    margin-top: 0.5em;
+}
+
+#booking-form input[type="submit"] {
+    margin-top: 1em;
+    background-color: #355c47;
+    color: white;
+    padding: 0.5em 1em;
+    border: none;
+    cursor: pointer;
+}
+
+#booking-form input[type="submit"]:hover {
+    background-color: #2b4738;
+}
