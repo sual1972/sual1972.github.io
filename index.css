@@ -104,13 +104,3 @@ img {
         margin-bottom: 10px; 
     }
 }
-
-@media (max-width: 480px) {
-    h1 {
-        font-size: 1.5rem; 
-    }
-
-    .content-container {
-        padding: 10px; 
-    }
-}
