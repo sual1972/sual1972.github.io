@@ -3,34 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Class Portal</title>
+    <title>Sultan's Class Portal</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
 
-<div class="container">
-    <h1>Welcome to Class Portal</h1>
+<header>
+    <h1>Welcome to Sultan's Class Portal</h1>
 
     <nav class="navigation" aria-label="Main Navigation">
-        <h2 class="visually-hidden">Main Navigation</h2>
-        <a href="#about-me" class="skip-link">About me</a>
-        <a href="main.html" title="Link to Assignment 2">Lab 2</a>
-        <a href="Lab3.html" title="Link to Assignment 3">Lab 3</a>
-        <a href="Lab4.html" title="Link to Assignment 4">Lab 4</a>
+        <ul>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#lab2">Lab #2</a></li>
+            <li><a href="#lab3">Lab #3</a></li>
+            <li><a href="#lab4">Lab #4</a></li>
+            <li><a href="#final-project">Final Project</a></li>
+        </ul>
     </nav>
+</header>
 
-    <div id="mainContent" class="content-container">
+<main>
+    <section id="about-me" class="content-container">
         <div class="image-container">
-            <img src="image.jpeg" alt="Image of Sultan">
+            <img src="image.jpeg" alt="Avatar of Sultan">
         </div>
         <div class="about-me">
             <h2>About Me</h2>
             <p>    Hello! My name is Sultan, and I'm currently in my senior year studying Computer Science. Throughout my academic journey, I've cultivated a passion for technology, coding, and problem-solving. As I approach the culmination of my studies, I'm thrilled to embark on this course, eagerly anticipating the new challenges and knowledge it will bring. Let's dive in!</p>
-            <p>For more information about my professional background and projects, feel free to connect with me on LinkedIn. <a href="https://www.linkedin.com/in/sultan-alshakrah-b68810172/" target="_blank">Visit my LinkedIn profile.</a></p>
+            <p>For more information about my professional background and projects, feel free to connect with me on LinkedIn. <a href="https://www.linkedin.com/in/sultan-alshakrah-b68810172/" target="_blank">Visit my LinkedIn profile.</a></p>            
         </div>
+    </section>
+
+<!-- Lab #2 Section -->
+<section id="lab2" class="content-container">
+    <h2>Lab 2</h2>
+    <p>In Lab #2, I chose to recode a Wikipedia article about Alnassr FC using HTML5 semantic structure. The task involved using anchor links for navigation, downloading and optimizing images, and using CSS for visual hiding and improving legibility. A wrapper was also created to limit the line length to about 100 characters.</p>
+    <a href="#lab2" target="_blank">View</a>
+</section>
+
+<!-- Lab #3 Section -->
+<section id="lab3" class="content-container">
+    <h2>Lab 3</h2>
+    <p>In Lab #3, I created a semantically structured HTML page about Cuisine Central. It included specific HTML5 elements, an accessible form, a data table, skip navigation, and Google fonts and material icons. The page was validated with various tools like HTML Validator, Wave, and Lighthouse.</p>
+    <a href="#lab3" target="_blank">View</a>
+</section>
+
+<!-- Lab #4 Section -->
+<section id="lab4" class="content-container">
+    <h2>Lab 4</h2>
+    <p>Lab #4 involved creating a multicolumn layout for the Green Terrace Garden Café website. This layout included a header, nav, main, asides, and footer, designed using CSS Grid and Flexbox. Media queries were used for responsiveness, and the navigation was made thumb-friendly for mobile devices.</p>
+    <a href="#lab3" target="_blank">View</a>
+</section>
+
+
+<!-- Favorite Project Section -->
+<section id="favorite-project" class="content-container">
+    <h2>Favorite Project - WW2 startegy game</h2>
+    <div class="project-description">
+        <img src="image1.png" alt="Screenshot of Interactive Learning Platform" class="project-image">
+        <p>Engineered a complex World War II simulation strategy game in C++, centered around strategic resource management and tactical decision-making.</p>
+        <p>Designed gameplay elements allowing players to launch attacks, build armies, and manage infrastructure, enhancing the immersive war experience.</p>
+        <p>Incorporated sophisticated economic mechanics, such as spying, taxation, and war finance management, to simulate real-world wartime economics.</p>
     </div>
-    
-</div>
+</section>
+
+<!-- Final Project Section -->
+<section id="final-project" class="content-container">
+    <h2>Final Project - Universal Design Website</h2>
+    <p>Working on it ...</p>
+</section>
+
+</main>
 
 </body>
 </html>
