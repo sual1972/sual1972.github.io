@@ -128,11 +128,6 @@ footer {
     }
 }
 
-/* Accessibility Improvements */
-a:focus,
-a:hover {
-    outline: 2px solid #5a68d6; /* Blue outline for visibility */
-}
 
 /* Improved Readability */
 section,
