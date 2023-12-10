@@ -29,10 +29,10 @@ footer {
 
 header {
     grid-area: heady;
-    background: #4CAF50; /* Green */
-    color: #d4edda;
+    background: #3A783A; /* Green */
+    color: #fff;
     font-size: 1.4em; /* Larger text for header */
-    border-top: 3px solid #5a68d6; /* Highlight border top */
+    border-top: 3px solid #3A783A; /* Highlight border top */
 }
 
 nav {
