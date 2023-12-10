@@ -29,7 +29,7 @@ footer {
 
 header {
     grid-area: heady;
-    background: #6c7ae0; /* Deep blue */
+    background: #4CAF50; /* Green */
     color: #fff;
     font-size: 1.4em; /* Larger text for header */
     border-top: 3px solid #5a68d6; /* Highlight border top */
@@ -37,7 +37,7 @@ header {
 
 nav {
     grid-area: navvy;
-    background: #f0f0f0; /* Light gray */
+    background: #d4edda; /* Light green */
 }
 
 nav ul {
@@ -72,15 +72,15 @@ main img {
 
 aside {
     grid-area: aside1;
-    background: #e9e9e9;
+    background: #d4edda; /* Light green */
     padding: 1.5em;
 }
 
 footer {
     grid-area: footy;
-    background: #6c7ae0; /* Same as header for consistency */
+    background: #4CAF50; /* Green */
     color: #fff;
-    border-top: 3px solid #5a68d6; /* Highlight border top */
+    background: #4CAF50; /* Green */
     text-align: center;
 }
 
@@ -190,6 +190,6 @@ main {
 }
 
 .button:hover {
-    background-color: #45a049; /* Darker green on hover */
+    background-color: #3e8e41; /* Adjusted darker green on hover */
     text-decoration: none; /* Ensure underline doesn't reappear on hover */
 }
