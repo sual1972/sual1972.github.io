@@ -144,6 +144,7 @@ main {
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
     border: 0;
+    color: #fff;
 }
 .feedback-forum {
     background-color: #f4f4f4; /* Light gray background */
