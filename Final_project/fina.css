@@ -30,7 +30,7 @@ footer {
 header {
     grid-area: heady;
     background: #4CAF50; /* Green */
-    color: #fff;
+    color: #d4edda;
     font-size: 1.4em; /* Larger text for header */
     border-top: 3px solid #5a68d6; /* Highlight border top */
 }
@@ -78,9 +78,9 @@ aside {
 
 footer {
     grid-area: footy;
-    background: #4CAF50; /* Green */
+    background: #3A783A; /* Green */
     color: #fff;
-    background: #4CAF50; /* Green */
+    background: #3A783A; /* Green */
     text-align: center;
 }
 
@@ -176,7 +176,7 @@ main {
 }
 
 .button {
-    background-color: #4CAF50; /* Green background */
+    background-color: #2E702E; /* Green background */
     color: white;
     padding: 10px 20px;
     border: none;
