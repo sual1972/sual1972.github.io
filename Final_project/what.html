@@ -33,7 +33,8 @@
         <section id="feedback-forum" class="feedback-forum">
             <h2>Share Your Thoughts</h2>
             <p>We value your input! Share your experiences and opinions on Universal Design.</p>
-            <form action="submit-feedback.php" method="post" class="feedback-form">
+            
+            <form method="post" class="feedback-form" onsubmit="processForm(); return false;">
                 <div class="form-group">
                     <label for="experience-level">Your Experience with Universal Design:</label>
                     <select name="experience" id="experience-level" class="form-control">
@@ -45,13 +46,14 @@
                 </div>
                 <div class="form-group">
                     <label for="feedback">Your Feedback:</label>
-                    <textarea name="feedback" id="feedback" rows="4" class="form-control" placeholder="Enter your feedback here..."></textarea>
+                    <textarea name="feedback" id="feedback" rows="4" class="form-control" placeholder="Enter your feedback here..." required minlength="5"></textarea>
                 </div>
                 <div class="form-group">
                     <button type="submit" class="button">Submit Feedback</button>
                 </div>
             </form>
         </section>
+        
     </aside>
     
     
@@ -81,7 +83,17 @@
     <footer>
         <p>© 2023 Universal Design Education</p>
     </footer>
-    
+    <script>
+        function processForm() {
+            var feedback = document.getElementById('feedback').value;
+            if (feedback.length < 5) {
+                alert("Please enter at least 5 characters in the feedback.");
+                return false;
+            }
+            alert("Feedback submitted!");
+            return false; 
+        }
+    </script>
 </div>
 </body>
 </html>

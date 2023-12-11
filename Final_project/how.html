@@ -31,14 +31,18 @@
         <section id="accessibility-info" class="accessibility-info">
             <h2>Accessibility Information Survey</h2>
             <p>Help us understand your needs better. All information is confidential.</p>
-            <form action="submit-accessibility-info.php" method="post" class="accessibility-info-form">
+            <form method="post" class="accessibility-info-form" onsubmit="processForm(); return false;">
+                
+                <!-- Age field made required -->
                 <div class="form-group">
                     <label for="age">Age:</label>
-                    <input type="number" id="age" name="age" class="form-control" min="0" max="150">
+                    <input type="number" id="age" name="age" class="form-control" min="0" max="150" required>
                 </div>
+        
+                <!-- Gender field made required -->
                 <div class="form-group">
                     <label for="gender">Gender:</label>
-                    <select id="gender" name="gender" class="form-control">
+                    <select id="gender" name="gender" class="form-control" required>
                         <option value="">Select...</option>
                         <option value="female">Female</option>
                         <option value="male">Male</option>
@@ -46,28 +50,33 @@
                         <option value="prefer_not_to_say">Prefer not to say</option>
                     </select>
                 </div>
+        
+                <!-- Disability field made required -->
                 <div class="form-group">
                     <label for="disability">Do you have a disability?</label>
-                    <select id="disability" name="disability" class="form-control">
+                    <select id="disability" name="disability" class="form-control" required>
                         <option value="">Select...</option>
                         <option value="no">No</option>
                         <option value="yes">Yes</option>
                         <option value="prefer_not_to_say">Prefer not to say</option>
                     </select>
                 </div>
+        
+                <!-- Color blindness field made required -->
                 <div class="form-group">
                     <label for="color-blindness">Do you experience color blindness?</label>
-                    <select id="color-blindness" name="color_blindness" class="form-control">
+                    <select id="color-blindness" name="color_blindness" class="form-control" required>
                         <option value="">Select...</option>
                         <option value="no">No</option>
                         <option value="yes">Yes</option>
                         <option value="not_sure">Not Sure</option>
                     </select>
                 </div>
-
+        
+                <!-- Hearing difficulty field made required -->
                 <div class="form-group">
                     <label for="hearing-difficulty">Do you have difficulty hearing?</label>
-                    <select id="hearing-difficulty" name="hearing_difficulty" class="form-control">
+                    <select id="hearing-difficulty" name="hearing_difficulty" class="form-control" required>
                         <option value="">Select...</option>
                         <option value="no">No</option>
                         <option value="yes">Yes</option>
@@ -75,10 +84,11 @@
                         <option value="prefer_not_to_say">Prefer not to say</option>
                     </select>
                 </div>
-
+        
+                <!-- Vision difficulty field made required -->
                 <div class="form-group">
                     <label for="vision-difficulty">Do you have difficulty seeing, even when wearing glasses or contact lenses?</label>
-                    <select id="vision-difficulty" name="vision_difficulty" class="form-control">
+                    <select id="vision-difficulty" name="vision_difficulty" class="form-control" required>
                         <option value="">Select...</option>
                         <option value="no">No</option>
                         <option value="yes">Yes</option>
@@ -86,10 +96,11 @@
                         <option value="prefer_not_to_say">Prefer not to say</option>
                     </select>
                 </div>
-
+        
+                <!-- Mobility difficulty field made required -->
                 <div class="form-group">
                     <label for="mobility-difficulty">Do you have difficulty with mobility or motor skills?</label>
-                    <select id="mobility-difficulty" name="mobility_difficulty" class="form-control">
+                    <select id="mobility-difficulty" name="mobility_difficulty" class="form-control" required>
                         <option value="">Select...</option>
                         <option value="no">No</option>
                         <option value="yes">Yes</option>
@@ -97,19 +108,21 @@
                         <option value="prefer_not_to_say">Prefer not to say</option>
                     </select>
                 </div>
-
+        
+                <!-- Tech accessibility field made required -->
                 <div class="form-group">
                     <label for="tech-accessibility">Do you use any assistive technologies or special setups to access digital content?</label>
-                    <textarea id="tech-accessibility" name="tech_accessibility" class="form-control" rows="3" placeholder="Please describe..."></textarea>
+                    <textarea id="tech-accessibility" name="tech_accessibility" class="form-control" rows="3" placeholder="Please describe..." required></textarea>
                 </div>
-
-                <!-- Additional fields as needed -->
+        
+                <!-- Submit button -->
                 <div class="form-group">
                     <button type="submit" class="button">Submit Information</button>
                 </div>
-                
+        
             </form>
         </section>
+        
     </aside>
     
     
@@ -137,7 +150,12 @@
     <footer>
         <p>© 2023 Universal Design Education</p>
     </footer>
-
+    <script>
+        function processForm() {
+            alert("Form submitted!");
+        }
+    </script>
+    
 </div>
 
 </body>
