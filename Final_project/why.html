@@ -10,6 +10,8 @@
 
 
     <div class="container">
+        <a class="skip-link" href="#main-content">Skip to main content</a>
+
         <header>
             <h1>Universal Design Education</h1>
         </header>
@@ -52,46 +54,75 @@
             <a href="https://discord.com/invite/designbuddies?ref=thehiveindex.com&utm_source=thehiveindex.com&utm_campaign=featured" class="button">Visit Forum</a>
         </section>
     </aside>
-    <main>
+    <main id="main-content">
         <section id="why">
             <h2>Why Universal Design</h2>
             <p>Universal design in web development is not just a trend; it's an essential approach to creating websites and digital content that are accessible and usable by everyone, regardless of their abilities. This inclusive design philosophy benefits not only individuals with disabilities but also offers enhanced usability for all users.</p>
 
             <img src="final1.png" alt="Illustration of Universal Design Principles">
 
-            <h3>Importance of Accessibility</h3>
+            <h3>Key Aspects of Universal Design in Web Development:</h3>
             <p>Accessibility in web design ensures that people with disabilities can perceive, understand, navigate, and interact with the web. By considering accessibility from the start, we can create more inclusive digital experiences.</p>
 
-            <div class="accordion">
-                <button class="accordion-button">Why it is important? Click me</button>
-                <div class="accordion-content">
-                    <p>Universal design extends beyond mere compliance with legal standards. It involves creating web experiences that are inherently accessible to all users, including older individuals, people with temporary disabilities, and those using mobile devices.</p>
-                </div>
-            </div>
 
-            <h3>Benefits for All</h3>
-            <p>When websites are universally designed, they become more navigable, easier to understand, and overall more user-friendly. This not only benefits users with specific needs but enhances the experience for all visitors, potentially increasing reach and engagement.</p>
+            <details>
+                <summary>Benefits for All</summary>
+                <p> Universal design extends beyond mere compliance with legal standards. It involves creating web experiences that are inherently accessible to all users, including older individuals, people with temporary disabilities, and those using mobile devices.</p>
+            </details>
 
+            <details>
+                <summary>Accessibility</summary>
+                <p> It ensures that people with disabilities can perceive, understand, navigate, and interact with the web. This includes visual, auditory, motor, and cognitive disabilities. By integrating accessibility into the design process from the start, digital experiences become more inclusive.</p>
+            </details>
+
+            <details>
+                <summary>Usability for All</summary>
+                <p> Universal design goes beyond catering to disabilities and aims to enhance the user experience for everyone. This includes older individuals, people with temporary impairments, and those using various devices, like mobile phones or tablets.</p>
+            </details>
+
+            <details>
+                <summary>Benefits Beyond Compliance</summary>
+                <p> While compliance with legal standards such as the Americans with Disabilities Act (ADA) is important, universal design advocates for a more holistic approach. It's about creating web experiences that are inherently accessible, rather than retrofitting accessibility as an afterthought.</p>
+            </details>
+
+            <details>
+                <summary>Enhanced User Experience</summary>
+                <p> Websites that are universally designed tend to be more navigable, easier to understand, and overall more user-friendly. This not only caters to users with specific needs but enhances the experience for all visitors. It can lead to increased website reach, higher engagement, and improved satisfaction.</p>
+            </details>
+
+            <details>
+                <summary>Long-term Cost Efficiency</summary>
+                <p> Investing in universal design from the outset can be more cost-effective in the long run. It reduces the need for subsequent modifications and ensures a wider audience can access the website without barriers.</p>
+            </details>
+
+
+            <h3>Why Universal Design is Important:</h3>
+            <p>Accessibility in web design ensures that people with disabilities can perceive, understand, navigate, and interact with the web. By considering accessibility from the start, we can create more inclusive digital experiences.</p>
+
+            <details>
+                <summary>Inclusivity</summary>
+                <p> It embodies the principle of creating an inclusive digital world where no one is left behind due to their physical or cognitive abilities.</p>
+            </details>
+
+            <details>
+                <summary>Legal and Ethical Obligations</summary>
+                <p> It helps in meeting legal requirements and ethical responsibilities towards providing equal access to information and technology.</p>
+            </details>
+
+            <details>
+                <summary>Broader Market Reach</summary>
+                <p> Websites accessible to a wider audience can tap into a larger market, including the aging population and people with temporary injuries.</p>
+            </details>
+
+            <details>
+                <summary>Improved SEO</summary>
+                <p> Search engines tend to favor websites that are accessible, potentially improving the site's visibility and ranking.</p>
+            </details>
         </section>
     </main>
     <footer>
         <p>© 2023 Universal Design Education</p>
     </footer>
-
-        <script>
-            document.querySelectorAll('.accordion-button').forEach(button => {
-                button.addEventListener('click', () => {
-                    const accordionContent = button.nextElementSibling;
-                    button.classList.toggle('accordion-button-active');
-    
-                    if (button.classList.contains('accordion-button-active')) {
-                        accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
-                    } else {
-                        accordionContent.style.maxHeight = 0;
-                    }
-                });
-            });
-        </script>
 </div>
 
 </body>
