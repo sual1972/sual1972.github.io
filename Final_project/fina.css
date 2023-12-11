@@ -193,8 +193,8 @@ aside #news {
 }
 
 .skip-link{
-    background: white;
-    color: #000;
+    background: #3e8e41;
+    color: white;
     font-weight: 700px;
     padding: 4px;
     position: absolute;
@@ -203,8 +203,4 @@ aside #news {
 
 .skip-link:focus{
     transform: translateY(0%);
-}
-
-.skip-link {
-    transition: transform 0.3s;
 }
