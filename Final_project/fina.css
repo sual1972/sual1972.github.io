@@ -188,3 +188,6 @@ main {
     background-color: #3e8e41; /* Adjusted darker green on hover */
     text-decoration: none; /* Ensure underline doesn't reappear on hover */
 }
+aside #news {
+    font-size: 13px; /* Smaller font size; adjust as needed */
+}
