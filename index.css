@@ -78,6 +78,7 @@ img {
     border-radius: 5px;
 }
 
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .container {
@@ -104,4 +105,17 @@ img {
         background: white;
         color: #2a3d45; /* Adjusted to maintain color consistency */
     }
+}
+.skip-link {
+    background: black;
+    color: #fff;
+    font-weight: 700;
+    padding: 4px;
+    position: absolute;
+    text-align: left;
+    transform: translateY(-200%);
+    transition: transform 0.3s;
+    }
+.skip-link:focus{
+    transform: translateY(0%);
 }
